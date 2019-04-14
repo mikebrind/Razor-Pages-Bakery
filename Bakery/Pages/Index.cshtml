@@ -9,7 +9,7 @@
 
 <div id="featuredProduct" class="row"> 
     <div class="col-sm-8">
-        <img alt="Featured Product" src="~/Images/Products/@Model.FeaturedProduct.ImageName" class="img-fluid rounded"/>
+        <img alt="Featured Product" src="~/images/products/@Model.FeaturedProduct.ImageName" class="img-fluid rounded"/>
     </div>
     <div id="featuredProductInfo" class="col-sm-4">
         <div id="productInfo">
@@ -29,7 +29,7 @@
         <a asp-page="/order" asp-route-id="@product.Id" title="Order @product.Name">
             <div class="productInfo">
                 <h3>@product.Name</h3>
-                <img class="product-image img-fluid img-thumbnail" src="~/Images/Products/Thumbnails/@product.ImageName" alt="Image of @product.Name" />
+                <img class="product-image img-fluid img-thumbnail" src="~/images/products/thumbnails/@product.ImageName" alt="Image of @product.Name" />
                 <p class="description">@product.Description</p>
             </div>
         </a>
